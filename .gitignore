@@ -1,0 +1,8 @@
+.DS_Store
+log/*.log
+tmp/**/*
+db/*.sqlite3
+log/nginx.pid
+rerun.txt
+.bundle
+webrat.log

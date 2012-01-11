@@ -1,0 +1,33 @@
+=border-radius(!radius)
+  border-radius = !radius
+  :-webkit-border-radius = !radius
+  :-moz-border-radius = !radius
+
+!yellow_light = #ffd953
+!yellow_dark = #ffaf00
+
+
+.container
+  background-color = !yellow_dark
+  +border-radius(5px)
+  background = -webkit-gradient(linear, left top, left bottom, from(!yellow_dark), to(!yellow_light))
+
+  padding: 1px 20px 30px 20px
+
+  // Float clearing hack
+  overflow: auto
+  width: 100%
+
+.diagram-pane
+  width: 400px
+  float: left
+
+  #diagram
+    width: 370px
+    height: 280px
+    margin-top: 2em
+
+.form-pane
+  width: 300px
+  float: right
+

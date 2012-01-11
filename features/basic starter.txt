@@ -1,0 +1,11 @@
+Feature: As a <role>
+I want <feature>
+in order to <value>
+
+  Scenario:
+  Given <situation>
+  When <action>
+  Then <outcome>
+  and <...>
+  but <...>
+  Then I should see <...>

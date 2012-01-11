@@ -1,0 +1,67 @@
+.calendar
+  margin: auto
+
+  th.monthName
+    font:
+      weight: bold
+      size: 2em
+    text:
+      align: center
+      shadow = (!yellow_light + #333) 0 1px 1px 
+
+    margin: 0
+    padding: 0.7em 0 0.15em
+    
+  .dayName th
+    font-size: 0.7em
+    padding-top: 1.2em
+    padding-bottom: 0.3em
+    //background-color: #303030
+    color = !yellow_light
+    text-transform: uppercase    
+
+    abbr
+      :border none
+      text-shadow = (!yellow_dark - #222) 0 -1px 1px
+
+  .otherMonth, .day, .specialDay
+    padding: 0.7em 1em
+    //border-right: 1px solid white
+
+
+  .otherMonth
+    //background-color: white
+    color = !yellow_light
+
+
+  .day, .specialDay
+    text-align: center
+    border-bottom: none
+    //background-color: #eee
+
+
+  .weekendDay
+    //background-color: #ddd
+
+  .specialDay
+    //background-color: #d10a21
+    color: white
+
+  .day, .specialDay, .weekendDay, .today, .otherMonth
+    font-size: 1.5em
+
+  .day, .specialDay, .weekendDay, .today
+    a, a:visited
+      font-weight: bold
+      text-decoration: none
+      color: black
+      text-shadow: white 0 1px 1px
+
+      &:hover
+        border-bottom: 3px solid black
+  
+  .today
+    background-color = !yellow_light + #222
+    
+
+

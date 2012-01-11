@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailzorBegin</title>
+  <%= stylesheet_link_tag 'application', :media => 'all', :cache => true %>
+  <%= javascript_include_tag 'jquery-1.4.min', 'raphael-min', 'application', :cache => true %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <%= render :partial => 'layouts/flashes' -%>
+  <div class="container">
+    <%= yield %>
+  </div>
+</body>
+</html>

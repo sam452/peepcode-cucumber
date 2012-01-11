@@ -1,0 +1,45 @@
+Rails 3.0 Changes
+=================
+
+The sample application has been updated with these changes:
+
+* Generated Rails 3 code, using the "rails new" command, now replaces most of originally generated Rails 2 files
+* Removed unnecessary executables in scripts/
+* Merged old .gitignore.rails2 with the generated .gitignore
+* Added bundler gem dependency for haml ~> 3.0.22
+* Added bundler gem dependency for rspec-rails ~> 2.0.1 in the test and development groups
+* Added bundler gem dependency for webrat ~> 0.7.2 in the test and development groups
+* Added bundler gem dependency for database_cleaner ~> 0.6.0 in the test and development groups
+* Added bundler gem dependency for cucumber-rails ~> 0.3.2 in the test and development groups
+* Refactored config/application.rb to auto-load the Rails.root/lib path like in Rails 2
+* Refactored config/routes.rb to use the current API
+* Refactored old DATE_FORMATS API into the news Rails 3 way
+* Removed vendor/rails
+* Removed vendor/gems/rspec-1.3.0
+* Removed vendor/gems/rspec-rails-1.3.2
+* Removed vendor/gems/cucumber-rails-0.2.4
+* Removed vendor/gems/database_cleaner-0.4.3
+* Removed vendor/gems/webrat-0.7.0
+* Ran bundle install
+* Created a back-up of spec/spec_helper.rb.rails2
+* Removed spec/spec.opts in favor of the new .rspec file
+* Replaced RSpec core files by running script/rails generate rspec:install
+* Removed outdated lib/tasks/rspec.rake
+* Created a back-up of features/support/env.rb.rails2
+* Created a back-up of features/support/paths.rb.rails2
+* Replaced Cucumber core files by running script/rails generate cucumber:install --rspec --webrat
+* Configured Webrat for :rack mode
+* Re-added custom paths to Cucumber
+* Refactored RAILS_ROOT to Rails.root
+* Included AuthenticatedSystem module into app/controllers/application_controller.rb
+* Fixed deprecated ERb helper calls in the following files:
+  * app/views/sessions/new.html.erb
+  * app/views/users/new.html.erb
+* Refactored error_messages_for() helpers into Rails 3 best-practice code
+  * app/views/users/new.html.erb
+* Updated app/views/layouts/application.html.erb to use the auto-generated and valid HTML 5 boiler-plate
+* Removed all "h()" helper method calls in the following files: (html safe strings are now the default in views)
+  * app/views/layouts/_flashes.html.erb
+* Refactored all specs to explicitly require 'spec_helper'
+* Fixed deprecation warnings by converting Errors#on to Errors#[]
+* Fixed deprecation warnings by converting ActiveRecord#save(false) to ActiveRecord#save(:validate => false)

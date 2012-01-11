@@ -1,0 +1,120 @@
+body {
+  width: 700px;
+  margin: 1em auto; }
+
+body, p, th, td {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: 1em; }
+
+table .monthName {
+  padding-bottom: 1em; }
+
+.container {
+  background-color: #ffaf00;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffaf00), to(#ffd953));
+  padding: 1px 20px 30px 20px;
+  overflow: auto;
+  width: 100%; }
+
+.diagram-pane {
+  width: 400px;
+  float: left; }
+  .diagram-pane #diagram {
+    width: 370px;
+    height: 280px;
+    margin-top: 2em; }
+
+.form-pane {
+  width: 300px;
+  float: right; }
+
+form label, form fieldset legend {
+  display: block;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding-bottom: 0.5em;
+  text-transform: uppercase; }
+form textarea {
+  width: 250px;
+  height: 100px; }
+form fieldset {
+  margin-left: 0;
+  margin-top: 1em;
+  padding-left: 0;
+  border: none; }
+  form fieldset legend {
+    padding-left: 0; }
+  form fieldset label {
+    display: inline;
+    font-weight: normal; }
+  form fieldset input[type="radio"] {
+    margin-right: 2em; }
+form input[type="text"], form input[type="password"] {
+  margin-bottom: 1em; }
+form input[type="submit"] {
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: 10px;
+  margin-right: 2em;
+  float: right; }
+
+h1, form label, form fieldset legend {
+  text-shadow: #ffff86 0 1px 1px; }
+
+h1, .calendar th.monthName {
+  background-image: url(/images/notch.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.3em; }
+
+.calendar {
+  margin: auto; }
+  .calendar th.monthName {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: #ffff86 0 1px 1px;
+    margin: 0;
+    padding: 0.7em 0 0.15em; }
+  .calendar .dayName th {
+    font-size: 0.7em;
+    padding-top: 1.2em;
+    padding-bottom: 0.3em;
+    color: #ffd953;
+    text-transform: uppercase; }
+    .calendar .dayName th abbr {
+      border: none;
+      text-shadow: #dd8d00 0 -1px 1px; }
+  .calendar .otherMonth, .calendar .day, .calendar .specialDay {
+    padding: 0.7em 1em; }
+  .calendar .otherMonth {
+    color: #ffd953; }
+  .calendar .day, .calendar .specialDay {
+    text-align: center;
+    border-bottom: none; }
+  .calendar .specialDay {
+    color: white; }
+  .calendar .day, .calendar .specialDay, .calendar .weekendDay, .calendar .today, .calendar .otherMonth {
+    font-size: 1.5em; }
+  .calendar .day a, .calendar .day a:visited, .calendar .specialDay a, .calendar .specialDay a:visited, .calendar .weekendDay a, .calendar .weekendDay a:visited, .calendar .today a, .calendar .today a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-shadow: white 0 1px 1px; }
+    .calendar .day a:hover, .calendar .day a:visited:hover, .calendar .specialDay a:hover, .calendar .specialDay a:visited:hover, .calendar .weekendDay a:hover, .calendar .weekendDay a:visited:hover, .calendar .today a:hover, .calendar .today a:visited:hover {
+      border-bottom: 3px solid black; }
+  .calendar .today {
+    background-color: #fffb75; }
+
+#flash div {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 1em auto;
+  padding: 0.5em 0; }
+  #flash div.notice {
+    color: green; }
